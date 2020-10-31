@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+    background-color: teal;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.address{
+    
+    display: flex;
+    flex-direction: column;
+}
+.address a{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px auto;
+    background-color: violet;
+     text-decoration: none;
+     color: white;
+     
+     border-radius: 10px;
+}
+.address a:hover{
+    background-color: springgreen;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.middle{
+    text-align: center;
+    background-color: skyblue;
+}
+.middle p{
+    font-family: 'Satisfy', cursive;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+
+}
+.top-icon {
+    width: 100px;
+    height: 100px;
+    margin-left: 460px;
+}
+.bottom-icon{
+  width: 100px;
+  height: 100px;
+  margin-right: 460px;
+}
+.middle::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.about-me{
+    text-align: center;
+    background-color: coral;
+}
+.dotted-hr{
+    width: 100px;
+    border: 2px dotted white;
+    margin: 10px auto;
+}
+
+.pic img{
+    height: 120px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.details a{
+    text-decoration: none;
+}
+.about-me::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.experience-section{
+   margin-top: 20px;
+}
+.work{
+    margin-bottom: 10px;
+    
+    height: 550px;
+    background-color: darkgray;
+}
+.work .card-icon, .card-title{
+    text-align: center;
+}
+.card-icon img{
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.work2{
+    
+    height: 550px;
+    background-color: darkgray;
+}
+
+.work2 .card-icon{
+    text-align: center;
+}
+.work:hover{
+    box-shadow: 3px 4px black;
+}
+.work2:hover{
+    box-shadow: 3px 4px black;
+}
+.card-title h2{
+    width: 300px;
+    background-color: darkslategray;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.skills{
+    margin-top: 10px;
+    height: 550px;
+    background-color: darkgray;
+}
+
+.skills .card-icon{
+    text-align: center;
+}
+
+
+.container li{
+   list-style: none;
+   margin: 30px;
+   text-transform: uppercase;
+   position: relative;
+}
+.container li::before{
+    left: 0px;
+    height: 10px;
+    width: 100%;
+     background-color: green;
+     content: '';
+     border-radius: 1000px;
+     top: calc(100% + 5px);
+     position: absolute;
+}
+
+.container li::after{
+    left: 0px;
+    height: 10px;
+    width: 0%;
+     background-color: greenyellow;
+     content: '';
+     border-radius: 1000px;
+     top: calc(100% + 5px);
+     position: absolute;
+
+     animation-timing-function: linear;
+     animation-duration: 3s;
+     animation-fill-mode: forwards;
+     animation-iteration-count: infinite;
+}
+.container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.container{
+    padding-right: 45px;
+}
+.experience-section::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.achievement-section{
+    background-color: turquoise;
+    text-align: center;
+}
+.contact-me input,textarea{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    resize: none;
+    border-radius: 10px;
+}
+.contact-me button{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px ;
+}
+
+.media-button .btn{
+    
+    color: red;
+    padding: 5px;
+    margin: 10px;
+    font-size: 32px;
+    width: 50px;
+    
+}
+.achievement-section::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.footer .menu{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer .menu a{ 
+    background-color: yellowgreen;
+    margin: 5px auto;
+    text-decoration: none;
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+}
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
